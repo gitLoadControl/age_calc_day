@@ -20,8 +20,22 @@
             <input placeholder="Введите дату рождения" type="date" name="date" id="date-born">
             <button type="submit" id="submit-button">Рассчитать</button>
         </div>
-        <div class="response"><span id="days"></span></div>
     </form>
+    <div class="response_container">
+        <div class="response_days">
+            <p class="description">Ты прожил:</p>
+            <span id="days"></span>
+        </div>
+        <div class="response_zodiac">
+            <div class="response_zodiac-name">
+                <p class="description">Твой знак зодиака:</p>
+                <span id="zodiac-name">Водолей</span>
+                <img class="response_zodiac-img" id="zodiac-img" src="/img/zodiac/aquarius-svgrepo-com.svg"
+                    alt="Водолей">
+            </div>
+        </div>
+    </div>
     <script src="main.js"></script>
 </body>
+
 </html>
