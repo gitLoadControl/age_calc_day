@@ -24,7 +24,7 @@ function  calculationDays(event) {
   days.innerHTML= Math.floor(numberDays);
 
   // Выводим подпись
-  days.innerHTML= "Ты живешь: " + Math.floor(numberDays) + declOfNum(Math.floor(numberDays), [' день', ' дня', ' дней']);
+  days.innerHTML= Math.floor(numberDays) + declOfNum(Math.floor(numberDays), [' день', ' дня', ' дней']);
 }
 
 button.addEventListener('click', calculationDays);

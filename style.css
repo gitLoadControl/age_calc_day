@@ -1,6 +1,7 @@
 body {
     display: flex;
     align-items: center;
+    flex-direction: column;
     justify-content: center;
     height: 100vh;
     background: #363636;
@@ -15,6 +16,7 @@ body {
     padding: 20px;
     border-radius: 10px;
     max-width: 320px;
+    margin-bottom: 30px;
   }
   
   .title {
@@ -28,7 +30,7 @@ body {
   .description {
     line-height: 1.5rem;
     font-size: 1rem;
-    margin-top: 1rem;
+    margin-top: 0;
     color: rgb(209 213 219);
   }
   
@@ -79,6 +81,43 @@ body {
   .form div button:active {
     border: 2px solid #999;
   }
-  .response {
-    color: #fff;
+  .response_days {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 30px;
+  }
+  .response_days span {
+    font-size: 24px;
+    font-weight: 700;
+    color: #000;
+  }
+
+  .response_container {
+    font-family: 'Ubuntu', sans-serif;
+    display: flex;
+    flex-direction: column;
+    background: #606c88;
+    background: -webkit-linear-gradient(to right, #090b0e, #575757);
+    background: linear-gradient(to right, #6d717c, #868686);
+    padding: 20px;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 320px;
+  }
+
+  .response_zodiac-name {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .response_zodiac-name span {
+    font-size: 24px;
+    font-weight: 700;
+    color: #000;
+  }
+  .response_zodiac-img {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
   }
